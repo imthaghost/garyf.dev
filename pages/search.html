@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Huttl</title>
+
+    <!-- Styles -->
+    <link href="static/css/main.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/search.css" rel="stylesheet" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="static/img/apple-touch-icon.png">
+    <link rel="icon" href="static/imgs/favicon.png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="smart">
+        <div class="container">
+
+            <div class="navbar-left mr-4">
+                <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+
+            </div>
+
+
+            <section class="navbar-mobile">
+                <nav class="nav nav-navbar mr-auto">
+                    <a class="nav-link active" href="{{url_for('index_page.index')}}">Home</a>
+                    <a class="nav-link" href="#section-features">Features</a>
+                    <a class="nav-link" href="#section-pricing">Pricing</a>
+                    <a class="nav-link" href="#">Resources</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </nav>
+
+                <div class="d-none d-stick-block">
+                    <a class="btn btn-sm btn-light ml-lg-5 mr-2" href="#">Login</a>
+
+                </div>
+            </section>
+
+        </div>
+    </nav><!-- /.navbar -->
+
+    <header id="home" class="header text-white h-fullscreen text-center text-lg-left" style="background-color: #24292e">
+        <canvas class="constellation" data-color="rgba(255,255,255,3)"></canvas>
+        <div class="container">
+
+            <header class="section-header">
+                <div class="s130 lead">
+                    <form method="POST">
+                        <div class="inner-form">
+                            <div class="input-field first-wrap">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <input name="details" id="search" type="text" placeholder="What are your interests?" />
+                            </div>
+                            <div class="input-field second-wrap">
+                                <button id="search_button" type="button" class="btn-search"
+                                    type="submit">Search</button>
+                            </div>
+                        </div>
+                        <!-- <span class="info"> Keywords: python, javascript, etc..</span> -->
+                    </form>
+                </div>
+            </header>
+
+
+
+
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="static/js/main.js"></script>
+        <script src="static/js/extention/choices.js"></script>
+        <script src="static/js/script.js"></script>
+</body>
+
+
+</html>

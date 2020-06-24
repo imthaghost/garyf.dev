@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>Huttl</title>
+
+    <!-- Styles -->
+    <link href="static/css/main.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="static/img/apple-touch-icon.png">
+    <link rel="icon" href="static/imgs/favicon.png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="smart">
+        <div class="container">
+
+            <div class="navbar-left mr-4">
+                <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+
+            </div>
+
+
+            <section class="navbar-mobile">
+                <nav class="nav nav-navbar mr-auto">
+                    <a class="nav-link active" href="{{url_for('index_page.index')}}">Home</a>
+                    <a class="nav-link" href="#section-features">Features</a>
+                    <a class="nav-link" href="#section-pricing">Pricing</a>
+                    <a class="nav-link" href="{{url_for('explore_page.explore')}}">Explore</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </nav>
+
+                <div class="d-none d-stick-block">
+                    <a class="btn btn-sm btn-light ml-lg-5 mr-2" href="#">Login</a>
+
+                </div>
+            </section>
+
+        </div>
+    </nav><!-- /.navbar -->
+
+    <header id="home" class="header text-white h-fullscreen text-center text-lg-left" style="background-color: #24292e">
+        <canvas class="constellation" data-color="rgba(255,255,255,3)"></canvas>
+        <div class="container">
+
+            <header class="section-header">
+                <!-- <small>Try It Now</small> -->
+                <h2 class="lead-8"><strong>Login</strong></h2>
+                <hr>
+
+            </header>
+
+
+            <div class="row">
+                <form method="POST" class="col-md-4 col-xl-4 mx-auto input-border">
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Name" name="name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control form-control-lg" placeholder="Password"
+                            name="password">
+                    </div>
+
+                    <button type="submit" class="btn btn-block btn-xl btn-success">Login</button>
+                    <a href="#"><span class="small mt-3 opacity-70"><img
+                                src="https://img.icons8.com/office/37/000000/google-logo.png"></span></a>
+
+                    <a href="{{url_for('github_route.github_direct')}}"><span
+                            class="small mt-3 opacity-70 margin-top-sm"><img
+                                src="https://img.icons8.com/nolan/45/github.png"></span></a>
+                </form>
+            </div>
+
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="static/js/main.js"></script>
+        <script src="static/js/script.js"></script>
+</body>
+
+
+</html>
