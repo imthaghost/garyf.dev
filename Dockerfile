@@ -2,7 +2,7 @@
 FROM golang:alpine3.12
 
 # Enviornment variables
-ENV APP_NAME musik
+ENV APP_NAME garyf.dev
 ENV PORT 8080
 
 # Open system port
