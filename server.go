@@ -14,11 +14,11 @@ func main() {
 	//CORS
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
 		AllowOrigins: []string{"*"},
-		AllowMethods: []string{echo.GET, echo.HEAD, echo.PUT, echo.PATCH, echo.POST, echo.DELETE},
+		AllowMethods: []string{echo.GET, echo.HEAD},
 	}))
 	// Static file handler
 	e.Static("/", "assets")
-	// html handler
+	// routes
 	e.File("/", "pages/index.html")
 	e.File("/index", "pages/index.html")
 	// Server
