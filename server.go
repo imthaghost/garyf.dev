@@ -21,6 +21,8 @@ func main() {
 	// routes
 	e.File("/", "pages/index.html")
 	e.File("/index", "pages/index.html")
+	e.File("/resume", "pages/resume.html")
+	e.File("/articles", "pages/articles.html")
 	// Server
 	e.Logger.Fatal(e.Start(":8080"))
 
