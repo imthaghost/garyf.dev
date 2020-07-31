@@ -1,8 +1,5 @@
-<p align="center">
-    <img alt="gopher" src="docs/media/music.png"> <img alt="gopher" src="docs/media/pods.png"> 
-</p>
-<p align="center"> Just my portfolio site
-</p>
+<p align="center"> Just my portfolio site</p>
+<br>
+<p align="center"> <a href="https://garyf.dev">Portfolio</a></p>
 
 
-# Built With:
