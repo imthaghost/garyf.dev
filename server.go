@@ -24,6 +24,7 @@ func main() {
 	e.File("/projects", "pages/projects.html")
 	e.File("/resume", "pages/resume.html")
 	e.File("/articles", "pages/articles.html")
+	e.File("/test", "pages/test.html")
 	e.GET("/pdf", func(c echo.Context) error {
 		return c.Attachment("assets/pdf/resume.pdf", "GaryFrederickResume.pdf")
 	})
