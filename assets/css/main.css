@@ -1619,6 +1619,10 @@ pre code {
     color: #757575
 }
 
+.white {
+    color:#fff
+}
+
 .table th,
 .table td {
     padding: .75rem;
