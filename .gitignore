@@ -1,2 +1,8 @@
+# OSX Stuff
 .DS_Store
+
+# Enviornment Stuff
 .env
+
+# JetBrains Stuff
+.idea
