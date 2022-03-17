@@ -1,15 +1,12 @@
 package main
 
 import (
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
+	"github.com/labstack/echo/v4"
 )
 
 func main() {
 	e := echo.New()
 
-	// logger
-	e.Use(middleware.Logger())
 
 	// Static file handler
 	e.Static("/", "assets")
