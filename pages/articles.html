@@ -41,7 +41,7 @@
             <a class="nav-link" href="/">About</a>
             <a class="nav-link" href="/projects">Projects</a>
             <a class="nav-link text-dark" href="/articles">Articles</a>
-<!--            <a class="nav-link" href="/resume">Resume</a>-->
+            <!--            <a class="nav-link" href="/resume">Resume</a>-->
           </nav>
 
           <!-- <div class="d-none d-stick-block">
@@ -65,39 +65,51 @@
           <header class="section-header">
             <small>Articles</small>
             <!-- <h2>More to Discover</h2> -->
-            <p class="lead">
-              Here are some articles I wrote!
-            </p>
+            <p class="lead">Here are some articles I wrote!</p>
             <hr />
           </header>
-
+          <!-- Bypass IP-address based ratelimit -->
           <div class="row gap-y align-items-center">
             <div class="col-md-6 ml-auto">
-              <a class="btn-outline-light" href="https://medium.com/better-programming/intro-77f65f73f6d3"
-                ><h4>StockAPI</h4></a
+              <a
+                class="btn-outline-light"
+                href="https://betterprogramming.pub/bypass-ip-address-based-rate-limits-with-rotating-ip-addresses-in-golang-30f19a0d56d7"
+                ><h4>
+                  Bypass IP Address-Based Rate Limits With Rotating IP Addresses
+                  In Go
+                </h4></a
               >
 
               <p>
-                This article is about how to build Golang restful api with Echo
-                framework that returns stock data from Yahoo Finance
+                This article introduces the underlying concepts behind IP-based
+                rate-limiting when communicating with a service and what can be
+                done to circumvent it. We build a simple HTTP Client in Golang
+                that will have the ability to rotate IP addresses when necessary
+                and then look at how to build our own local proxy pool with Tor,
+                to utilizing commercial proxy pool services with SmartProxy.
               </p>
               <br />
               <p>
-                <b><a href="https://medium.com/better-programming/intro-77f65f73f6d3">Medium</a></b>
+                <b
+                  ><a
+                    href="https://betterprogramming.pub/bypass-ip-address-based-rate-limits-with-rotating-ip-addresses-in-golang-30f19a0d56d7"
+                    >Medium</a
+                  ></b
+                >
               </p>
             </div>
 
             <div class="col-md-5 order-md-first">
               <a
                 class="btn-outline-light"
-                href="https://medium.com/better-programming/intro-77f65f73f6d3"
-                ><img class="rounded shadow-2" src="imgs/stock.gif" alt="..."
+                href="https://betterprogramming.pub/bypass-ip-address-based-rate-limits-with-rotating-ip-addresses-in-golang-30f19a0d56d7"
+                ><img class="rounded shadow-2" src="imgs/ip.gif" alt="..."
               /></a>
             </div>
           </div>
 
           <hr class="my-8" />
-
+          <!-- Caprover -->
           <div class="row gap-y align-items-center">
             <div class="col-md-6 mr-auto">
               <a
@@ -106,14 +118,21 @@
                 ><h4>Caprover: The Definitive Guide</h4></a
               >
               <p>
-                This article is intended for everyone who does not like spending hours and days configuring a server. We write the article with intent to inform people who are wanting to develop their own production ready servers with very little costs. We cover CapRover fundamentals as well as some advanced topics. This article is full of cross-references — sometimes forward — to related material.
-
-
+                This article is intended for everyone who does not like spending
+                hours and days configuring a server. We write the article with
+                intent to inform people who are wanting to develop their own
+                production ready servers with very little costs. We cover
+                CapRover fundamentals as well as some advanced topics. This
+                article is full of cross-references — sometimes forward — to
+                related material.
               </p>
               <br />
               <p>
                 <b
-                  ><a href="https://medium.com/swlh/caprover-the-definitive-guide-90076405aae4">Medium</a></b
+                  ><a
+                    href="https://medium.com/swlh/caprover-the-definitive-guide-90076405aae4"
+                    >Medium</a
+                  ></b
                 >
               </p>
             </div>
@@ -122,12 +141,46 @@
               <a
                 class="btn-outline-light"
                 href="https://medium.com/swlh/caprover-the-definitive-guide-90076405aae4"
-                ><img class="rounded shadow-2" src="imgs/caprover.gif" alt="..."
+                ><img
+                  class="rounded shadow-2"
+                  src="imgs/caprover.gif"
+                  alt="..."
               /></a>
             </div>
           </div>
+          <!-- StockAPI -->
+          <div class="row gap-y align-items-right">
+            <div class="col-md-6 mr-auto">
+              <a
+                class="btn btn-outline-light"
+                href="https://medium.com/better-programming/intro-77f65f73f6d3"
+                ><h4>
+                  Build a Golang RESTful Stock API With the Echo Framework
+                </h4></a
+              >
+              <p>
+                This article is about how to build Golang Restful API with Echo
+                framework that returns stock data from Yahoo Finance.
+              </p>
+              <br />
+              <p>
+                <b
+                  ><a
+                    href="https://medium.com/better-programming/intro-77f65f73f6d3"
+                    >Medium</a
+                  ></b
+                >
+              </p>
+            </div>
 
-        
+            <div class="col-md-5">
+              <a
+                class="btn-outline-light"
+                href="https://medium.com/better-programming/intro-77f65f73f6d3"
+                ><img class="rounded shadow-2" src="imgs/stock.gif" alt="..."
+              /></a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
